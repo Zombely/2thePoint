@@ -11,5 +11,8 @@
   	};
 	</script>
 	<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+			FB.getLoginStatus(function(response) {
+    	statusChangeCallback(response);
+	});
 	</body>
 </html>
